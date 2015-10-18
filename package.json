@@ -22,5 +22,8 @@
   "homepage": "https://github.com/OzieGamma/BraintreeCLI",
   "bin": {
     "braintree-cli": "index.js"
+  },
+  "dependencies": {
+    "braintree": "^1.29.0"
   }
 }
