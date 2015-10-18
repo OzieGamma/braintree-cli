@@ -1,7 +1,7 @@
 var braintree = require("braintree");
 
 function showTransactionSummary(userData, scale) {
-	var env = userData.env === "sandbox" ?  : braintree.Environment.Production;
+	var env = userData.env === "sandbox" ? braintree.Environment.Sandbox : braintree.Environment.Production;
 	
 	console.log("Showing transactions per " + scale);
 	
