@@ -1,7 +1,7 @@
 var braintree = require("braintree");
 
 function showTransactionSummary(userData, scale) {
-	var env = userData.env === "sandbox" ? braintree.Environment.Sandbox : braintree.Environment.Production;
+	var env = userData.env === "sandbox" ?  : braintree.Environment.Production;
 	
 	console.log("Showing transactions per " + scale);
 	
@@ -22,7 +22,7 @@ function showTransactionSummary(userData, scale) {
 		
 	for(var i = 0; i < userData.merchants.length; i += 1) {
 		var gateway = braintree.connect({
-			environment: braintree.Environment.Sandbox,
+			environment: env,
 			merchantId: userData.merchants[i],
 			publicKey: userData.publicKey,
 			privateKey: userData.privateKey
