@@ -39,8 +39,6 @@ function showTransactionSummary(userData, scale) {
 		
 		stream.on("data", function (transaction) {
 			
-			console.log(transaction);
-			
 			var date = "";
 			if(scale === "hour"){
 				date = transaction.createdAt.substring(0, 13);
