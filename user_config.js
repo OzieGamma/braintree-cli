@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 
-var CONFIG_FILE = './user_config.json';
+var CONFIG_FILE = __dirname + '/user_config.json';
 
 var UserConfig = {};
 
