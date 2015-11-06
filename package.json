@@ -1,29 +1,30 @@
 {
-  "name": "BraintreeCLI",
-  "version": "1.0.0",
-  "description": "A Braintree command-line interface",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OzieGamma/BraintreeCLI.git"
-  },
-  "keywords": [
-    "Braintree",
-    "CLI"
-  ],
   "author": "Oswald Maskens (OzieGamma)",
-  "license": "Apache 2",
-  "bugs": {
-    "url": "https://github.com/OzieGamma/BraintreeCLI/issues"
-  },
-  "preferGlobal": true,
-  "homepage": "https://github.com/OzieGamma/BraintreeCLI",
   "bin": {
     "braintree-cli": "index.js"
   },
+  "bugs": {
+    "url": "https://github.com/OzieGamma/braintree-cli/issues"
+  },
   "dependencies": {
-    "braintree": "^1.29.0"
-  }
+    "braintree": "^1.29.0",
+    "commander": "^2.9.0"
+  },
+  "description": "A Braintree command-line interface",
+  "homepage": "https://github.com/OzieGamma/braintree-cli",
+  "keywords": [
+    "Braintree",
+    "cli"
+  ],
+  "license": "Apache 2",
+  "name": "braintree-cli",
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OzieGamma/braintree-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0"
 }

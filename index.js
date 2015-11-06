@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 
 var CONFIG_FILE = __dirname + "/config.json";
 
