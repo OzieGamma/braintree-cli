@@ -1,7 +1,7 @@
 {
   "author": "Oswald Maskens (OzieGamma)",
   "bin": {
-    "braintree-cli": "index.js"
+    "braintree-cli": "braintree-cli.js"
   },
   "bugs": {
     "url": "https://github.com/OzieGamma/braintree-cli/issues"

@@ -2,6 +2,7 @@
 logs
 *.log
 config.json
+user_config.json
 
 # Runtime data
 pids
