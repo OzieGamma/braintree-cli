@@ -5,7 +5,7 @@ It is written as a NodeJS module.
 ## Getting Started
 `npm install braintree-cli` or `npm install -g braintree-cli` (global install)
 
-`braintree-cli help`
+`braintree-cli --help`
 
 ## NPM
 You can find this package on npm:
