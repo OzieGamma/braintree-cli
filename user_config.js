@@ -37,4 +37,11 @@ UserConfig.save = function() {
     fs.writeFileSync(CONFIG_FILE, JSON.stringify(UserConfig.data));
 };
 
+/**
+ * Clears the user config data from the disk
+ */
+UserConfig.clear = function() {
+    fs.unlinkSync(CONFIG_FILE);
+}
+
 module.exports = UserConfig;

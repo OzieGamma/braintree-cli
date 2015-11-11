@@ -13,8 +13,8 @@ var pkg = require('./package.json');
 /* Set the version number */
 cli.version(pkg.version, '-v, --version');
 
-/* set-account */
-cli.command('set-account <public key> <private key>')
+/* login & logout */
+cli.command('login <public key> <private key>')
     .option('--production', 'Run against the production API')
     .description('Defines what account to use to access the braintree API')
     .action(function(publicKey, privateKey, options) {
@@ -30,6 +30,9 @@ cli.command('set-account <public key> <private key>')
             environment = 'sandbox';
         }
 
+        console.log('WARNING: Your private and public key will be store on your computer in cleartext.');
+        console.log('WARNING: Use logout to clear it.');
+
         // TODO: figure out how to do this more properly
         userConfig.data = {
             "environment": environment,
@@ -39,6 +42,12 @@ cli.command('set-account <public key> <private key>')
         };
 
         userConfig.save();
+    });
+
+cli.command('logout')
+    .description('Clears login data from the disk')
+    .action(function() {
+        userConfig.clear();
     });
 
 /* add-merchant */
