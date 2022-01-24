@@ -88,7 +88,7 @@ cli.command('summary')
 cli
     .command('*')
     .action(function() {
-        cli.help();
+        cli.help(); // foo test, demoeing github
     });
 
 if (process.argv.length === 2) {
